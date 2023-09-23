@@ -12,6 +12,11 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+
+        td {
+            padding: 5px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -26,12 +31,62 @@
             <td>Валюта</td>
         </tr>
         <tr>
-            <th>1</th>
+            <td>1</td>
             <td>Томаты</td>
             <td>50</td>
-            <td>руб.</td>
+            <td rowspan="3">руб.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Огурцы</td>
+            <td>60</td>
+
+        </tr>
+        <tr>
+            <td colspan="2">Итого:</td>
+            <td>110</td>
+
         </tr>
     </table>
+
+    <hr>
+
+    <table>
+        <caption>Автомобили</caption>
+        <thead>
+            <tr>
+                <th>Номер п/п</th>
+                <th>Марка</th>
+                <th>Модель</th>
+                <th>Стоимость руб.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan="3">Тойота</td>
+                <td>Corolla</td>
+                <td>1900000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Camry</td>
+                <td>2400000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>RAV4</td>
+                <td>2600000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Итого</td>
+                <td>6900000</td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
 
 </html>
