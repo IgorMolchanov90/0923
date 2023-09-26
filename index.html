@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница</title>
-    <style>
-        .brown {
-            color: brown;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -22,7 +18,7 @@
     </a>
     <p><a href="https://www.google.com/" target="_blank">Перейти на Google</a></p>
 
-    <p>
+    <p class="text">
         <b>Web-программист</b> – это специалист, разрабатывающий веб-приложения (любые сайты, в которых есть элементы
         интерактива),
         то есть <span class="brown">фактически</span> большую часть интернет-ресурсов: поисковики, интернет-магазины,
@@ -56,7 +52,7 @@
         Один человек не может быть профессионалом во всем, поэтому программисты в web-сфере специализируются на узких
         направлениях:
     </p>
-    <ol>
+    <ol class="list">
         <li>frontend (клиентская часть) разработчики;</li>
         <li>backend (серверная часть) разработчики;</li>
         <li>fullstack-разработчики.</li>
@@ -119,10 +115,10 @@
         <p>Введит логин <input type="text" name="login" required placeholder="email или никнейм"></p>
         <p>Введите пароль <input type="password" name="password"></p>
         <h3>Ваши интересы</h3>
-        <ul>
-            <input type="checkbox" name="interes" value="music">Музыка<br>
-            <input type="checkbox" name="interes" value="sport">Спорт<br>
-            <input type="checkbox" name="interes" value="programming" checked>Программирование<br>
+        <ul class="list">
+            <input type="checkbox" name="interes" value="music"><span></span><span>Музыка</span><br>
+            <input type="checkbox" name="interes" value="sport"><span>Спорт</span><br>
+            <input type="checkbox" name="interes" value="programming" checked><span>Программирование</span><br>
         </ul>
         <h3>Способ оплаты</h3>
         <label><input type="radio" name="pay" value="visa">Visa<br></label>
@@ -138,7 +134,13 @@
                 <option value="brasil">Бразилия</option>
                 <option value="usa">США</option>
             </select>
+            <ul class="list">
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+            </ul>
         </div>
+
         <br>
         <textarea name="" id="" cols="30" rows="10" placeholder="Введите комментарий"></textarea>
         <br>

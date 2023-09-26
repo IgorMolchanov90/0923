@@ -1,0 +1,29 @@
+html,
+body {
+    height: 100%;
+}
+
+.text.active {
+    color: red;
+}
+
+form>.list {
+    background-color: green;
+}
+
+input:checked+span {
+    background-color: aqua;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 3px 5px 3px 5px;
+}
+
+th {
+    background-color: blueviolet;
+}
